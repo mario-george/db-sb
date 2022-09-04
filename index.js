@@ -15,7 +15,7 @@ const k22 = process.env['k']
 var mario = process.env['mario']
 const a = process.env['a']
 const cytrex22=process.env['cytrex22']
-var tokens = [k22, cytrex22]
+var tokens = [k22, mario]
 const keepAlive = require("./server")
 
 var d = new Date(), // New Date object
