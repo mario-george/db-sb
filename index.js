@@ -14,6 +14,7 @@ var m99 = process.env['a99']
 const k22 = process.env['k']
 var mario = process.env['mario']
 const a = process.env['a']
+const cytrex22=process.env['cytrex22']
 var tokens = [k22, mario,cytrex22]
 const keepAlive = require("./server")
 
