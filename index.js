@@ -38,7 +38,7 @@ for (const token of tokens) {
     { 
         activities: [
             { 
-                name: gamesforstreaming[Math.floor(Math.random() * answers.length)] , 
+                name: gamesforstreaming[Math.floor(Math.random() * gamesforstreaming.length)] , 
                 type: 'STREAMING' ,
               url: 'https://www.twitch.tv/'
             }
