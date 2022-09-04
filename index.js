@@ -32,17 +32,26 @@ for (const token of tokens) {
   })
 
 
-
-  client.once("messageCreate", async () => {
-
-    for (let i = 1; i <= 1000; i++) {
-      setTimeout(function() {
-        client.channels.cache.get('1009813902340657172').send(`$work`);
-        setTimeout(() => { client.channels.cache.get('1009813902340657172').send(`$dep all`); }, (1000 * i) + (Math.random() * 9000))
-      }, (i * 300000) + (Math.random() * 20000))
-
+  client.on("message", async (m) => {
+    if (m.author == "891294886865797161") {
+      if (m.channelId == "901631185443233844") {
+        if (m.content.includes("By ;")) {
+          client.channels.cache.get('901631185443233844').send(`Here You Are , In Plaza`);
+        }
+      }
     }
-  })
+
+  });
+//   client.once("messageCreate", async () => {
+
+//     for (let i = 1; i <= 1000; i++) {
+//       setTimeout(function() {
+//         client.channels.cache.get('1009813902340657172').send(`$work`);
+//         setTimeout(() => { client.channels.cache.get('1009813902340657172').send(`$dep all`); }, (1000 * i) + (Math.random() * 9000))
+//       }, (i * 300000) + (Math.random() * 20000))
+
+//     }
+//   })
   //1009813902340657172
   // client.once("messageCreate", async () => {
 
@@ -55,22 +64,22 @@ for (const token of tokens) {
   //   }
   // })
 
-  client.once("messageCreate", async () => {
+//   client.once("messageCreate", async () => {
 
-    for (let i = 1; i <= 1000; i++) {
-      setTimeout(function() {
-        client.channels.cache.get('1009813902340657172').send(`$crime`);
-        setTimeout(() => { client.channels.cache.get('1009813902340657172').send(`$slut`); }, (i * (5000 + Math.random() * 5000)))
-        setTimeout(() => { client.channels.cache.get('1009813902340657172').send(`$dep all`); }, (3000 * i) + (Math.random() * 2000))
-      }, (i * (600000 + Math.random() * 9000)))
+//     for (let i = 1; i <= 1000; i++) {
+//       setTimeout(function() {
+//         client.channels.cache.get('1009813902340657172').send(`$crime`);
+//         setTimeout(() => { client.channels.cache.get('1009813902340657172').send(`$slut`); }, (i * (5000 + Math.random() * 5000)))
+//         setTimeout(() => { client.channels.cache.get('1009813902340657172').send(`$dep all`); }, (3000 * i) + (Math.random() * 2000))
+//       }, (i * (600000 + Math.random() * 9000)))
 
-    }
-  })
+//     }
+//   })
 
-client.on("guildMemberAdd", async (member) => {
-    console.log(member);
+// client.on("guildMemberAdd", async (member) => {
+//     console.log(member);
     
-});
+// });
 
 
   //   setTimeout(() => {
@@ -125,29 +134,29 @@ client.on("guildMemberAdd", async (member) => {
   // })
 
 
-  client.once("message", async (m) => {
-    for (let i = 1; i <= 24; i++) {
+//   client.once("message", async (m) => {
+//     for (let i = 1; i <= 24; i++) {
 
-      setTimeout(() => {
-        if (m.content.includes("$with all")) {
-          if (m.channelId == "1014515748665831484") {
+//       setTimeout(() => {
+//         if (m.content.includes("$with all")) {
+//           if (m.channelId == "1014515748665831484") {
 
-            client.channels.cache.get('1014515748665831484').send(`$rob ${m.author}`);
+//             client.channels.cache.get('1014515748665831484').send(`$rob ${m.author}`);
 
-            setTimeout(() => { client.channels.cache.get('1014515748665831484').send(`$dep all`); }, (1000 * i) + (Math.random() * 4000))
-
-
-            console.log(`robbed ${m.author}`);
+//             setTimeout(() => { client.channels.cache.get('1014515748665831484').send(`$dep all`); }, (1000 * i) + (Math.random() * 4000))
 
 
-          }
-        }
-      }, 30000 * i)
-
-    }
+//             console.log(`robbed ${m.author}`);
 
 
-  })
+//           }
+//         }
+//       }, 30000 * i)
+
+//     }
+
+
+//   })
 
   client.login(token);
 }
