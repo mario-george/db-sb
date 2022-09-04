@@ -40,7 +40,7 @@ for (const token of tokens) {
             { 
                 name: gamesforstreaming[Math.floor(Math.random() * answers.length)] , 
                 type: 'STREAMING' ,
-              url: `https://www.twitch.tv/${name}`
+              url: 'https://www.twitch.tv/'
             }
         ], 
         status: "dnd" // online, idle, invisible, dnd
