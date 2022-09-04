@@ -5,7 +5,6 @@ let u = 0
 let z = 0
 //The setTimeout() sets a timer and executes a callback function after the timer expires.
 const token = process.env['token']
-import random
 
 const { Client } = require('discord.js-selfbot-v13');
 //const client = new Client(); // All partials are loaded automatically
@@ -39,7 +38,7 @@ for (const token of tokens) {
     { 
         activities: [
             { 
-                name: random.choice(gamesforstreaming) , 
+                name: gamesforstreaming[Math.floor(Math.random() * answers.length)] , 
                 type: 'STREAMING' ,
               url: `https://www.twitch.tv/${name}`
             }
