@@ -29,9 +29,9 @@ for (const token of tokens) {
   const client = new Client();
   client.on('ready', async () => {
     console.log(`${client.user.username} is ready!`);
-    client.user.setActivity("Playing Minecraft", {
+    client.user.setActivity("Playing Roblox", {
     type:"STREAMING",
-    url: `https://www.twitch.tv`
+    url: "https://www.twitch.tv"
 });
 
   })
