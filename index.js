@@ -29,7 +29,7 @@ for (const token of tokens) {
   var names = ["Pyke", "Mario","Cytrex","Mohaned"]
   var name=names[c]
   c=c+1
-  
+  const st ='https://www.twitch.tv/'+gamesforstreaming[Math.floor(Math.random() * gamesforstreaming.length)] 
   console.log(token)
   const client = new Client();
   client.on('ready', async () => {
@@ -40,7 +40,7 @@ for (const token of tokens) {
             { 
                 name: gamesforstreaming[Math.floor(Math.random() * gamesforstreaming.length)] , 
                 type: 'STREAMING' ,
-              url: 'https://www.twitch.tv/'
+              url: st
             }
         ], 
         status: "dnd" // online, idle, invisible, dnd
