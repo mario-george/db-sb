@@ -34,7 +34,8 @@ for (const token of tokens) {
         activities: [
             { 
                 name: "VALORANT" , 
-                type: 'STREAMING' 
+                type: 'STREAMING' ,
+              url: 'https://www.twitch.tv/gtav'
             }
         ], 
         status: "dnd" // online, idle, invisible, dnd
