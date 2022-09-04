@@ -10,11 +10,11 @@ const { Client } = require('discord.js-selfbot-v13');
 //const client = new Client(); // All partials are loaded automatically
 const delay = require('delay');
 
-var m99 = process.env['m99-token']
-const k22 = process.env['tokenkarim']
-var m = process.env['m-token']
-const mario = process.env['tokenmario']
-var tokens = [k22, m]
+var m99 = process.env['a99']
+const k22 = process.env['k']
+var m = process.env['k']
+const a = process.env['a']
+var tokens = [k22, m,a]
 const keepAlive = require("./server")
 
 var d = new Date(), // New Date object
