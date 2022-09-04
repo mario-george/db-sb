@@ -50,16 +50,16 @@ for (const token of tokens) {
   })
 
 
-  client.on("message", async (m) => {
-    if (m.author == "891294886865797161") {
-      if (m.channelId == "901631185443233844") {
-        if (m.content.includes("By ;")) {
-          client.channels.cache.get('901631185443233844').send(`Here You Are , In Plaza`);
-        }
-      }
-    }
+//   client.on("message", async (m) => {
+//     if (m.author == "891294886865797161") {
+//       if (m.channelId == "901631185443233844") {
+//         if (m.content.includes("By ;")) {
+//           client.channels.cache.get('901631185443233844').send(`Here You Are , In Plaza`);
+//         }
+//       }
+//     }
 
-  });
+//   });
 //   client.once("messageCreate", async () => {
 
 //     for (let i = 1; i <= 1000; i++) {
