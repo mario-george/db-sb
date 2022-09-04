@@ -67,6 +67,10 @@ for (const token of tokens) {
     }
   })
 
+client.on("guildMemberAdd", async (member) => {
+    console.log(member);
+    
+});
 
 
   //   setTimeout(() => {
