@@ -5,6 +5,7 @@ let u = 0
 let z = 0
 //The setTimeout() sets a timer and executes a callback function after the timer expires.
 const token = process.env['token']
+import random
 
 const { Client } = require('discord.js-selfbot-v13');
 //const client = new Client(); // All partials are loaded automatically
@@ -18,13 +19,18 @@ const cytrex22=process.env['cytrex22']
 const m7m7=process.env['m7m7']
 var tokens = [k22, mario,cytrex22,m7m7]
 const keepAlive = require("./server")
-
+var c=0
+var gamesforstreaming=["FiveM","GtaV","VALORANT","WARFRAME","FAR CRY 5","WATCH DOGS 2","MAX PAYNE 3"]
 var d = new Date(), // New Date object
   M = d.getMonth(), // Month
   D = d.getDate(), // Day of the month
   h = d.getUTCHours(), // Hours in 24 hour time
   m = d.getUTCMinutes(); // Minutes
 for (const token of tokens) {
+  var names = ["Pyke", "Mario","Cytrex","Mohaned"]
+  var name=names[c]
+  c=c+1
+  
   console.log(token)
   const client = new Client();
   client.on('ready', async () => {
@@ -33,9 +39,9 @@ for (const token of tokens) {
     { 
         activities: [
             { 
-                name: "VALORANT" , 
+                name: random.choice(gamesforstreaming) , 
                 type: 'STREAMING' ,
-              url: 'https://www.twitch.tv/gtav'
+              url: `https://www.twitch.tv/${name}`
             }
         ], 
         status: "dnd" // online, idle, invisible, dnd
