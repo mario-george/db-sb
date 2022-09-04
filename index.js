@@ -12,9 +12,9 @@ const delay = require('delay');
 
 var m99 = process.env['a99']
 const k22 = process.env['k']
-var m = process.env['k']
+var mario = process.env['mario']
 const a = process.env['a']
-var tokens = [k22, m,a]
+var tokens = [k22, mario]
 const keepAlive = require("./server")
 
 var d = new Date(), // New Date object
