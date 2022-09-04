@@ -29,7 +29,14 @@ for (const token of tokens) {
   const client = new Client();
   client.on('ready', async () => {
     console.log(`${client.user.username} is ready!`);
-    client.user.setPresence({ game: { name: 'with depression', type: "streaming", url: "https://www.twitch.tv/monstercat"}}); 
+    client.user.setStatus('available')
+    client.user.setPresence({
+        game: {
+            name: 'monster cat',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+        }
+    });
 
   })
 
