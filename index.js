@@ -41,8 +41,8 @@ for (const token of tokens) {
     console.error(e);
   });
             
-        })
-    }
+        }
+    
     console.log(`${client.user.username} is ready!`);
     client.user.setPresence(
     { 
