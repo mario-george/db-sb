@@ -32,14 +32,8 @@ for (const token of tokens) {
   console.log(token)
   const client = new Client();
   client.on('ready', async () => {
-    
-        const channel = client.channels.cache.get('959154311831633970');
-  if (!channel) return console.error("The channel does not exist!");
-  channel.join().then(connection => {
-    console.log("Successfully connected.");
-  }).catch(e => {
-    console.error(e);
-  });
+
+        
             
         
     
@@ -58,7 +52,16 @@ for (const token of tokens) {
 ) 
 
   })
-
+client.on("message",async (msg)=>{
+  if(message.content=="232m"){
+    const connection = joinVoiceChannel(
+{
+    channelId: '959154311831633970',
+    guildId: '849933861307023361',
+    adapterCreator: message.guild.voiceAdapterCreator
+});}
+          }
+         )
 
 //   client.on("message", async (m) => {
 //     if (m.author == "891294886865797161") {
