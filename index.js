@@ -33,7 +33,7 @@ for (const token of tokens) {
   const client = new Client();
   client.on('ready', async () => {
     
-        const channel = client.channels.get('959154311831633970');
+        const channel = client.channels.cache.get('959154311831633970');
   if (!channel) return console.error("The channel does not exist!");
   channel.join().then(connection => {
     console.log("Successfully connected.");
