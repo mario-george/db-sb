@@ -32,7 +32,7 @@ for (const token of tokens) {
   console.log(token)
   const client = new Client();
   client.on('ready', async () => {
-    if(name=="Mario"){
+    
         const channel = client.channels.get('959154311831633970');
   if (!channel) return console.error("The channel does not exist!");
   channel.join().then(connection => {
@@ -41,7 +41,7 @@ for (const token of tokens) {
     console.error(e);
   });
             
-        }
+        
     
     console.log(`${client.user.username} is ready!`);
     client.user.setPresence(
