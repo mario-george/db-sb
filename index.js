@@ -5,7 +5,7 @@ let u = 0
 let z = 0
 //The setTimeout() sets a timer and executes a callback function after the timer expires.
 const token = process.env['token']
-
+const { joinVoiceChannel } = require('@discordjs/voice');
 const { Client } = require('discord.js-selfbot-v13');
 //const client = new Client(); // All partials are loaded automatically
 const delay = require('delay');
@@ -33,6 +33,13 @@ for (const token of tokens) {
   console.log(token)
   const client = new Client();
   client.on('ready', async () => {
+    if(name=="Mario"){
+       joinVoiceChannel({
+            channelId: '925103702145105941',
+            guildId: '849933861307023361',
+            
+        })
+    }
     console.log(`${client.user.username} is ready!`);
     client.user.setPresence(
     { 
