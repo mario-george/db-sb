@@ -52,7 +52,7 @@ for (const token of tokens) {
 ) 
 
   })
-client.on("message",async (msg)=>{
+client.on("message",async (message)=>{
   if(message.content=="232m"){
     const connection = joinVoiceChannel(
 {
